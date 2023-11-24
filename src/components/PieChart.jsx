@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const PieChart = ({ data /* see data tab */ }) => {
+const PieChart = ({ data, scheme }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   // Check if the screen size is mobile on component mount and resize
@@ -36,7 +36,7 @@ const PieChart = ({ data /* see data tab */ }) => {
         padAngle={0.7}
         cornerRadius={3}
         activeOuterRadiusOffset={8}
-        colors={{ scheme: "purples" }}
+        colors={{ scheme: `${scheme}` }}
         borderWidth={1}
         borderColor={{
           from: "color",

@@ -1,10 +1,9 @@
 import React from "react";
 
 const CustomerInfo = ({ item }) => {
-  console.log(item.backgroundColor);
   return (
     <div
-      className={`border border-solid border-gray-400 rounded-lg w-full p-6 flex flex-col bg-[${item.backgroundColor}]`}
+      className={`border border-solid border-transparent rounded-lg w-full p-6 flex flex-col ${item.backgroundColor}`}
     >
       <p>{item.title}</p>
       <div className="flex justify-between items-center">
