@@ -5,3 +5,51 @@
 body {
   box-sizing: border-box;
 }
+
+.dash {
+  background-color: #f5f5f5;
+}
+.sidebar {
+  height: 100vh;
+  transition: all 0.5s;
+  box-shadow: 7px 0px 15px -5px rgba(155, 153, 153, 0.75);
+  background-color: #e6e6e6;
+  padding: 12px;
+}
+.top {
+  display: flex;
+  align-items: center;
+  padding: 45px 30px 50px 5px;
+}
+
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 20px;
+}
+.link {
+  display: flex;
+  padding: 8px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+  font-size: 15px;
+}
+.link:hover {
+  background-color: #c5c3c3d7;
+  border-radius: 12px;
+}
+.team {
+  margin-top: 13rem;
+  margin-left: 3rem;
+  font-size: 15px;
+  display: flex;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.chart {
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+}
