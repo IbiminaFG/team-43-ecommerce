@@ -1,0 +1,100 @@
+body {
+  background-color: #f4f4f4;
+  max-height: 100vh;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+  margin: 8rem;
+}
+
+.welcome-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 5%;
+}
+
+.welcome-container h1 {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+
+.welcome-display p {
+  line-height: 1.5rem;
+}
+
+.image {
+  height: 442px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+}
+
+form p, .checkbox {
+  font-size: .6rem;
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #EBEBEB;
+  border-radius: 10px;
+  
+}
+
+input[type=text]:hover {
+  border: 3px solid #555;
+}
+
+
+input[type=text]:focus {
+  border: 3px solid #000;
+}
+
+.div-btns {
+  width: 100%;
+  display: flex;
+  margin: 2rem 0;
+}
+
+.div-btns .btn {
+  width: 50%;
+  padding: 14px 4px 14px 4px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #51a7ff;
+  color: #f4f4f4;
+  border: none;
+  transition: 300ms ease-in;
+}
+
+.div-btns .btn:hover {
+  background-color: #f4f4f4;
+  color: #51a7ff;
+}
+
+.div-btns .second {
+  background-color: #f4f4f4;
+  color: #51a7ff;
+}
+
+@media (max-width: 680px) {
+  main {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  input[type=text] {
+    width: 100%;
+  }
+}
